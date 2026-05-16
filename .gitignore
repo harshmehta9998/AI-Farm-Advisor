@@ -1,0 +1,36 @@
+# API keys and secrets
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# ML model files (large — store with Git LFS or cloud)
+models/saved_model/*.h5
+models/saved_model/*.keras
+models/saved_model/*.pb
+# Keep class_labels.json (small text file, safe to commit)
+!models/saved_model/class_labels.json
+
+# Dataset (download separately)
+data/
+
+# Streamlit cache
+.streamlit/
+
+# OS files
+.DS_Store
+Thumbs.db

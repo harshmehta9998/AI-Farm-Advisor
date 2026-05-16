@@ -1,0 +1,30 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Agri-Edge — requirements.txt
+# Install with: pip install -r requirements.txt
+# Python >= 3.9 recommended
+# ─────────────────────────────────────────────────────────────────────────────
+
+# ── Frontend ──────────────────────────────────────────────────────────────────
+streamlit>=1.32.0                # Main UI framework
+
+# ── Machine Learning ──────────────────────────────────────────────────────────
+tensorflow>=2.13.0               # Keras + TF for MobileNetV2
+# If on Apple Silicon Mac, use: pip install tensorflow-macos tensorflow-metal
+numpy>=1.24.0                    # Array operations
+Pillow>=10.0.0                   # Image loading and preprocessing
+scikit-learn>=1.3.0              # Optional: evaluation metrics, label encoding
+
+# ── HTTP & APIs ───────────────────────────────────────────────────────────────
+requests>=2.31.0                 # OpenWeather + Groq API calls
+
+# ── Configuration ─────────────────────────────────────────────────────────────
+python-dotenv>=1.0.0             # Load .env file for API keys
+
+# ── Data & Visualization ──────────────────────────────────────────────────────
+pandas>=2.0.0                    # Market data tables (optional, nice to have)
+plotly>=5.18.0                   # Interactive charts in Streamlit
+
+# ── Development & Testing (optional) ─────────────────────────────────────────
+# pytest>=7.4.0
+# black>=23.0.0
+# isort>=5.12.0
